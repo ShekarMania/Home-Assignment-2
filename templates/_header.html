@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <base href="{global.baseUrl}">
+
+    <title>{head.title} | {global.appName}</title>
+    <meta name="description" content="{head.description}">
+
+    <!-- STATIC ASSETS -->
+    <link type="image/x-icon" rel="icon" href="favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/app.css" />
+  </head>
+  <body>
+    <!-- PAGE WRAPPER -->
+    <div class="wrapper">
+
+      <!-- header -->
+      <div class="header">
+        <!-- logo -->
+        <a class="logo" href="/"></a>
+        <!-- nav -->
+        <ul class="menu">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a class="loggedOut" href="/account/create">Signup</a>
+          </li>
+          <li>
+            <a class="loggedOut" href="/session/create">Login</a>
+          </li>
+          <li>
+            <a class="loggedIn" href="/menu">Dashboard</a>
+          </li>
+          <li>
+            <a class="loggedIn" href="/cart">Cart</a>
+          </li>
+          <li>
+            <a class="loggedIn" id="logoutButton" click="app.bindLogoutButton('1')" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+      <!-- PAGE SPECIFIC CONTENT -->
+      <div class="content">
